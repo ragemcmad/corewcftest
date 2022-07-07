@@ -139,7 +139,7 @@ public static class Program
                     hostbase => hostbase.Description.Endpoints.First().EndpointBehaviors.Add(
                         new DummyBehavior(
                             new DummyAuthenticationDispatcher(),
-                            new OriginDispatcher(new string[] { "bssservices.de", "192.168.", "localhost", "myblueapp.de" })
+                            new OriginDispatcher(new string[] { "192.168.", "localhost" })
                         )
                     )
                  );
